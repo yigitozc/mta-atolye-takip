@@ -44,8 +44,6 @@ Kurulum gerektirmez; `index.html` dosyası doğrudan tarayıcıda da açılabili
 ```
 mta-atolye-takip/
 ├── index.html
-├── css/
-│   └── style.css
 └── assets/
     └── mta-arkaplansiz.png
 ```
