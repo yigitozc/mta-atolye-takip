@@ -5,7 +5,9 @@ BLM2537 Ağ Tabanlı Programlamaya Giriş dersi dönem projesi (2026–2027 Güz
 Milli Teknoloji Atölyesi'ndeki malzemelerin listelendiği, öğrencilerin malzeme talebi oluşturduğu ve koordinatör ile atölye çalışanlarının talepleri onaylayıp teslim ettiği bir web sitesi.
 
 - **Öğrenci:** Yiğit Özçelik
+- **Öğrenci No:** 25290233
 - **GitHub:** [yigitozc](https://github.com/yigitozc)
+- **Haftalık videolar:** [Google Drive klasörü](https://drive.google.com/drive/folders/18txYx89BXjT1UG1RaxmbDtq1OxMAdGA3?usp=sharing)
 
 ## Teknolojiler
 
