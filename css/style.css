@@ -1,0 +1,193 @@
+:root {
+  --arka-plan: #f5f6f8;
+  --yazi: #253044;
+  --ana-renk: #34465e;
+  --vurgu: #ae454e;
+  --yuzey: #ffffff;
+  --cizgi: #dce1e8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: var(--arka-plan);
+  color: var(--yazi);
+}
+
+a {
+  color: var(--ana-renk);
+}
+
+/* Üst kısım: logo ve menü */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 12px 24px;
+  background: var(--yuzey);
+  border-bottom: 1px solid var(--cizgi);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--yazi);
+  text-decoration: none;
+}
+
+.brand small {
+  display: block;
+}
+
+.menu {
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu a[aria-current="page"] {
+  color: var(--vurgu);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Sayfa içeriği */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.eyebrow {
+  color: var(--vurgu);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button,
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: var(--ana-renk);
+  color: #ffffff;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card,
+.panel {
+  padding: 16px;
+  background: var(--yuzey);
+  border: 1px solid var(--cizgi);
+  border-radius: 8px;
+}
+
+.columns {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.columns .panel {
+  flex: 1;
+}
+
+/* Formlar */
+form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--cizgi);
+  border-radius: 6px;
+  font: inherit;
+}
+
+form button {
+  margin-top: 16px;
+}
+
+/* Tablolar */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--yuzey);
+}
+
+th,
+td {
+  padding: 8px 12px;
+  border: 1px solid var(--cizgi);
+  text-align: left;
+}
+
+td input {
+  width: 80px;
+}
+
+.site-footer {
+  padding: 16px 24px;
+  text-align: center;
+  border-top: 1px solid var(--cizgi);
+}
+
+/* Telefon ve dar ekranlar */
+@media (max-width: 700px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .menu.acik {
+    display: flex;
+  }
+
+  .columns {
+    flex-direction: column;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}

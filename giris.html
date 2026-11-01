@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giriş Yap | MTA Atölye Malzeme Takip</title>
+  <link rel="icon" href="assets/mta-arkaplansiz.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      <img src="assets/mta-arkaplansiz.png" alt="Milli Teknoloji Atölyeleri logosu" width="120" height="70">
+      <span>
+        <strong>Milli Teknoloji Atölyesi</strong>
+        <small>Malzeme Takip Sistemi</small>
+      </span>
+    </a>
+
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="ana-menu">Menü</button>
+
+    <nav aria-label="Ana menü">
+      <ul class="menu" id="ana-menu">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="katalog.html">Katalog</a></li>
+        <li><a href="talep.html">Talep Oluştur</a></li>
+        <li><a href="talepler.html">Talepler</a></li>
+        <li><a href="urun-yonetimi.html">Ürün Yönetimi</a></li>
+        <li><a href="giris.html" aria-current="page">Giriş Yap</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Giriş Yap</h1>
+    <p>Öğrenciysen öğrenci numaranla, koordinatör veya atölye çalışanıysan yönetici hesabınla giriş yap.</p>
+
+    <div class="columns">
+      <section class="panel">
+        <h2>Öğrenci girişi</h2>
+        <form>
+          <label for="ogrenci-no">Öğrenci numarası</label>
+          <input type="text" id="ogrenci-no" name="ogrenciNo" inputmode="numeric" placeholder="ör. 25290233">
+
+          <label for="ogrenci-sifre">Şifre</label>
+          <input type="password" id="ogrenci-sifre" name="sifre">
+
+          <button type="submit" class="button">Giriş yap</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>Yönetici girişi</h2>
+        <form>
+          <label for="kullanici-adi">Kullanıcı adı</label>
+          <input type="text" id="kullanici-adi" name="kullaniciAdi">
+
+          <label for="yonetici-sifre">Şifre</label>
+          <input type="password" id="yonetici-sifre" name="sifre">
+
+          <button type="submit" class="button">Giriş yap</button>
+        </form>
+      </section>
+    </div>
+
+    <section class="panel">
+      <h2>Hesabın yok mu? Kayıt ol</h2>
+      <form>
+        <label for="ad-soyad">Ad soyad</label>
+        <input type="text" id="ad-soyad" name="adSoyad">
+
+        <label for="kayit-no">Öğrenci numarası (8 hane)</label>
+        <input type="text" id="kayit-no" name="ogrenciNo" inputmode="numeric">
+
+        <label for="eposta">E-posta</label>
+        <input type="email" id="eposta" name="eposta">
+
+        <label for="kayit-sifre">Şifre</label>
+        <input type="password" id="kayit-sifre" name="sifre">
+
+        <label for="kayit-sifre-tekrar">Şifre tekrar</label>
+        <input type="password" id="kayit-sifre-tekrar" name="sifreTekrar">
+
+        <button type="submit" class="button">Kayıt ol</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <address>
+      Milli Teknoloji Atölyesi<br>
+      E-posta: <a href="mailto:atolye@example.com">atolye@example.com</a>
+    </address>
+    <p>&copy; 2026 MTA Atölye Malzeme Takip Sistemi</p>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

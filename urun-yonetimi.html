@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ürün Yönetimi | MTA Atölye Malzeme Takip</title>
+  <link rel="icon" href="assets/mta-arkaplansiz.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="brand">
+      <img src="assets/mta-arkaplansiz.png" alt="Milli Teknoloji Atölyeleri logosu" width="120" height="70">
+      <span>
+        <strong>Milli Teknoloji Atölyesi</strong>
+        <small>Malzeme Takip Sistemi</small>
+      </span>
+    </a>
+
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="ana-menu">Menü</button>
+
+    <nav aria-label="Ana menü">
+      <ul class="menu" id="ana-menu">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="katalog.html">Katalog</a></li>
+        <li><a href="talep.html">Talep Oluştur</a></li>
+        <li><a href="talepler.html">Talepler</a></li>
+        <li><a href="urun-yonetimi.html" aria-current="page">Ürün Yönetimi</a></li>
+        <li><a href="giris.html">Giriş Yap</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Ürün Yönetimi</h1>
+    <p>Koordinatör ve atölye çalışanları buradan ürün ekler, bilgilerini günceller ve siler.</p>
+
+    <section class="panel">
+      <h2>Yeni ürün ekle</h2>
+      <form>
+        <label for="urun-adi">Ürün adı</label>
+        <input type="text" id="urun-adi" name="ad">
+
+        <label for="urun-kodu">Ürün kodu</label>
+        <input type="text" id="urun-kodu" name="kod" placeholder="ör. RO-002">
+
+        <label for="urun-kategori">Kategori</label>
+        <select id="urun-kategori" name="kategori">
+          <option>Elektronik</option>
+          <option>Robotik</option>
+          <option>Ölçüm</option>
+          <option>El aletleri</option>
+        </select>
+
+        <label for="urun-stok">Stok adedi</label>
+        <input type="number" id="urun-stok" name="stok" min="0">
+
+        <label for="urun-aciklama">Açıklama</label>
+        <textarea id="urun-aciklama" name="aciklama" rows="3"></textarea>
+
+        <button type="submit" class="button">Kaydet</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Ürün listesi</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Kod</th>
+            <th scope="col">Ürün adı</th>
+            <th scope="col">Kategori</th>
+            <th scope="col">Stok</th>
+            <th scope="col">İşlemler</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>EL-001</td>
+            <td>Arduino Uno</td>
+            <td>Elektronik</td>
+            <td>12</td>
+            <td>
+              <button type="button">Düzenle</button>
+              <button type="button">Sil</button>
+            </td>
+          </tr>
+          <tr>
+            <td>RO-002</td>
+            <td>Servo motor</td>
+            <td>Robotik</td>
+            <td>8</td>
+            <td>
+              <button type="button">Düzenle</button>
+              <button type="button">Sil</button>
+            </td>
+          </tr>
+          <tr>
+            <td>OL-001</td>
+            <td>Dijital multimetre</td>
+            <td>Ölçüm</td>
+            <td>3</td>
+            <td>
+              <button type="button">Düzenle</button>
+              <button type="button">Sil</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <address>
+      Milli Teknoloji Atölyesi<br>
+      E-posta: <a href="mailto:atolye@example.com">atolye@example.com</a>
+    </address>
+    <p>&copy; 2026 MTA Atölye Malzeme Takip Sistemi</p>
+  </footer>
+
+  <script src="js/menu.js"></script>
+</body>
+</html>

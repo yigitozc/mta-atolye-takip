@@ -6,6 +6,7 @@
   <meta name="description" content="Milli Teknoloji Atölyesi malzeme takip ve talep sistemi">
   <title>Ana Sayfa | MTA Atölye Malzeme Takip</title>
   <link rel="icon" href="assets/mta-arkaplansiz.png">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
@@ -17,8 +18,10 @@
       </span>
     </a>
 
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="ana-menu">Menü</button>
+
     <nav aria-label="Ana menü">
-      <ul class="menu">
+      <ul class="menu" id="ana-menu">
         <li><a href="index.html" aria-current="page">Ana Sayfa</a></li>
         <li><a href="katalog.html">Katalog</a></li>
         <li><a href="talep.html">Talep Oluştur</a></li>
@@ -111,5 +114,7 @@
     </address>
     <p>&copy; 2026 MTA Atölye Malzeme Takip Sistemi</p>
   </footer>
+
+  <script src="js/menu.js"></script>
 </body>
 </html>
