@@ -21,7 +21,7 @@ Milli Teknoloji Atölyesi'ndeki malzemelerin listelendiği, öğrencilerin malze
 |---|---|---|
 | Ana sayfa | `index.html` | HTML + CSS (1–2. hafta) |
 | Giriş / Kayıt | `giris.html` | HTML iskeleti (2. hafta) |
-| Ürün kataloğu | `katalog.html` | HTML iskeleti (2. hafta) |
+| Ürün kataloğu | `katalog.html` | JavaScript ile listeleme, arama, filtre, detay (3. hafta) |
 | Talep oluştur | `talep.html` | HTML iskeleti (2. hafta) |
 | Talepler | `talepler.html` | HTML iskeleti (2. hafta) |
 | Ürün yönetimi | `urun-yonetimi.html` | HTML iskeleti (2. hafta) |
@@ -52,7 +52,9 @@ mta-atolye-takip/
 ├── css/
 │   └── style.css
 ├── js/
-│   └── menu.js
+│   ├── menu.js
+│   ├── veri.js
+│   └── katalog.js
 └── assets/
     └── mta-arkaplansiz.png
 ```

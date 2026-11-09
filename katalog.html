@@ -52,45 +52,27 @@
 
     <section>
       <h2>Ürünler</h2>
-      <div class="cards">
-        <article class="card">
-          <p class="eyebrow">Elektronik</p>
-          <h3>Arduino Uno</h3>
-          <p>Prototip ve temel kontrol deneyleri için geliştirme kartı.</p>
-          <p><strong>Kod:</strong> EL-001<br><strong>Stok:</strong> 12 adet</p>
-        </article>
-        <article class="card">
-          <p class="eyebrow">Elektronik</p>
-          <h3>Sensör seti</h3>
-          <p>Sıcaklık, mesafe ve ışık sensörlerinden oluşan başlangıç seti.</p>
-          <p><strong>Kod:</strong> EL-002<br><strong>Stok:</strong> 5 adet</p>
-        </article>
-        <article class="card">
-          <p class="eyebrow">Robotik</p>
-          <h3>Servo motor</h3>
-          <p>Robot kol ve hareketli projeler için küçük servo motor.</p>
-          <p><strong>Kod:</strong> RO-002<br><strong>Stok:</strong> 8 adet</p>
-        </article>
-        <article class="card">
-          <p class="eyebrow">Ölçüm</p>
-          <h3>Dijital multimetre</h3>
-          <p>Gerilim, akım ve direnç ölçümü için el tipi cihaz.</p>
-          <p><strong>Kod:</strong> OL-001<br><strong>Stok:</strong> 3 adet</p>
-        </article>
-        <article class="card">
-          <p class="eyebrow">Ölçüm</p>
-          <h3>Kumpas</h3>
-          <p>Parça boyutlarını hassas ölçmek için.</p>
-          <p><strong>Kod:</strong> OL-002<br><strong>Stok:</strong> 4 adet</p>
-        </article>
-        <article class="card">
-          <p class="eyebrow">El aletleri</p>
-          <h3>Hassas tornavida seti</h3>
-          <p>Küçük parçaların sökülüp takılması için.</p>
-          <p><strong>Kod:</strong> EA-001<br><strong>Stok:</strong> 0 adet</p>
-        </article>
-      </div>
+      <p id="sonuc-sayisi"></p>
+      <div class="cards" id="urun-listesi"></div>
+      <p class="mesaj" id="bos-mesaj" hidden>Aramana uygun ürün bulunamadı.</p>
     </section>
+
+    <dialog id="urun-detay">
+      <h2 id="detay-ad"></h2>
+      <dl>
+        <dt>Kod</dt>
+        <dd id="detay-kod"></dd>
+        <dt>Kategori</dt>
+        <dd id="detay-kategori"></dd>
+        <dt>Stok</dt>
+        <dd id="detay-stok"></dd>
+        <dt>Açıklama</dt>
+        <dd id="detay-aciklama"></dd>
+      </dl>
+      <form method="dialog">
+        <button type="submit">Kapat</button>
+      </form>
+    </dialog>
   </main>
 
   <footer class="site-footer">
@@ -102,5 +84,7 @@
   </footer>
 
   <script src="js/menu.js"></script>
+  <script src="js/veri.js"></script>
+  <script src="js/katalog.js"></script>
 </body>
 </html>
