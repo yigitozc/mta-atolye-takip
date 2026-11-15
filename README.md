@@ -20,7 +20,7 @@ Milli Teknoloji Atölyesi'ndeki malzemelerin listelendiği, öğrencilerin malze
 | Sayfa | Dosya | Durum |
 |---|---|---|
 | Ana sayfa | `index.html` | HTML + CSS (1–2. hafta) |
-| Giriş / Kayıt | `giris.html` | HTML iskeleti (2. hafta) |
+| Giriş / Kayıt | `giris.html` | JavaScript ile form doğrulama, öğrenci/yönetici girişi ve kayıt (4. hafta) |
 | Ürün kataloğu | `katalog.html` | JavaScript ile listeleme, arama, filtre, detay (3. hafta) |
 | Talep oluştur | `talep.html` | HTML iskeleti (2. hafta) |
 | Talepler | `talepler.html` | HTML iskeleti (2. hafta) |
@@ -54,11 +54,18 @@ mta-atolye-takip/
 ├── js/
 │   ├── menu.js
 │   ├── veri.js
+│   ├── oturum.js
+│   ├── giris.js
 │   └── katalog.js
 └── assets/
     └── mta-arkaplansiz.png
 ```
 
+## Deneme hesapları
+
+- **Öğrenci:** Giriş sayfasındaki kayıt formuyla hesap oluşturulur (8 haneli öğrenci numarası).
+- **Yönetici:** Kullanıcı adı `koordinator`, şifre `atolye2026`. Bu, sitenin denenebilmesi için herkese açık bir deneme hesabıdır; gerçek bir şifre değildir.
+
 ## Not
 
-Giriş sistemi eğitim amaçlı bir simülasyondur; kullanıcı bilgileri tarayıcıda tutulur ve gerçek bir güvenlik sağlamaz.
+Giriş sistemi eğitim amaçlı bir simülasyondur. Kullanıcı bilgileri ve oturum tarayıcının localStorage alanında tutulur; şifreler şifrelenmez ve gerçek bir güvenlik sağlanmaz. Menüdeki sayfaların gizlenmesi yalnız görünümle ilgilidir.

@@ -23,10 +23,10 @@
       <ul class="menu" id="ana-menu">
         <li><a href="index.html">Ana Sayfa</a></li>
         <li><a href="katalog.html">Katalog</a></li>
-        <li><a href="talep.html">Talep Oluştur</a></li>
-        <li><a href="talepler.html">Talepler</a></li>
-        <li><a href="urun-yonetimi.html">Ürün Yönetimi</a></li>
-        <li><a href="giris.html" aria-current="page">Giriş Yap</a></li>
+        <li class="sadece-giris"><a href="talep.html">Talep Oluştur</a></li>
+        <li class="sadece-giris"><a href="talepler.html">Talepler</a></li>
+        <li class="sadece-yonetici"><a href="urun-yonetimi.html">Ürün Yönetimi</a></li>
+        <li><a href="giris.html" id="giris-baglantisi" aria-current="page">Giriş Yap</a></li>
       </ul>
     </nav>
   </header>
@@ -36,15 +36,19 @@
     <h1>Giriş Yap</h1>
     <p>Öğrenciysen öğrenci numaranla, koordinatör veya atölye çalışanıysan yönetici hesabınla giriş yap.</p>
 
+    <p class="mesaj" id="giris-durumu" hidden></p>
+
     <div class="columns">
       <section class="panel">
         <h2>Öğrenci girişi</h2>
-        <form>
+        <form id="ogrenci-formu" novalidate>
           <label for="ogrenci-no">Öğrenci numarası</label>
           <input type="text" id="ogrenci-no" name="ogrenciNo" inputmode="numeric" placeholder="ör. 25290233">
+          <small class="hata"></small>
 
           <label for="ogrenci-sifre">Şifre</label>
           <input type="password" id="ogrenci-sifre" name="sifre">
+          <small class="hata"></small>
 
           <button type="submit" class="button">Giriş yap</button>
         </form>
@@ -52,12 +56,14 @@
 
       <section class="panel">
         <h2>Yönetici girişi</h2>
-        <form>
+        <form id="yonetici-formu" novalidate>
           <label for="kullanici-adi">Kullanıcı adı</label>
           <input type="text" id="kullanici-adi" name="kullaniciAdi">
+          <small class="hata"></small>
 
           <label for="yonetici-sifre">Şifre</label>
           <input type="password" id="yonetici-sifre" name="sifre">
+          <small class="hata"></small>
 
           <button type="submit" class="button">Giriş yap</button>
         </form>
@@ -66,21 +72,26 @@
 
     <section class="panel">
       <h2>Hesabın yok mu? Kayıt ol</h2>
-      <form>
+      <form id="kayit-formu" novalidate>
         <label for="ad-soyad">Ad soyad</label>
         <input type="text" id="ad-soyad" name="adSoyad">
+        <small class="hata"></small>
 
         <label for="kayit-no">Öğrenci numarası (8 hane)</label>
         <input type="text" id="kayit-no" name="ogrenciNo" inputmode="numeric">
+        <small class="hata"></small>
 
         <label for="eposta">E-posta</label>
         <input type="email" id="eposta" name="eposta">
+        <small class="hata"></small>
 
-        <label for="kayit-sifre">Şifre</label>
+        <label for="kayit-sifre">Şifre (en az 6 karakter)</label>
         <input type="password" id="kayit-sifre" name="sifre">
+        <small class="hata"></small>
 
         <label for="kayit-sifre-tekrar">Şifre tekrar</label>
         <input type="password" id="kayit-sifre-tekrar" name="sifreTekrar">
+        <small class="hata"></small>
 
         <button type="submit" class="button">Kayıt ol</button>
       </form>
@@ -96,5 +107,7 @@
   </footer>
 
   <script src="js/menu.js"></script>
+  <script src="js/oturum.js"></script>
+  <script src="js/giris.js"></script>
 </body>
 </html>

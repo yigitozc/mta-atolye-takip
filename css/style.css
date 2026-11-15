@@ -196,6 +196,17 @@ dd {
   margin: 0;
 }
 
+/* Formlar: hata mesajları */
+.hata {
+  display: block;
+  min-height: 1.2em;
+  color: var(--vurgu);
+}
+
+input[aria-invalid="true"] {
+  border-color: var(--vurgu);
+}
+
 /* Telefon ve dar ekranlar */
 @media (max-width: 700px) {
   .menu-toggle {
